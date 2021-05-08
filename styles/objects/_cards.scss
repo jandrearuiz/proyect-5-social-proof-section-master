@@ -1,0 +1,9 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+  @media (min-width: $bp-medium) {
+    flex-direction: row;
+  }
+}

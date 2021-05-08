@@ -1,0 +1,12 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+
+  @media (min-width: $bp-medium) {
+   max-width: 80%;
+   margin: auto;
+   height: 100vh;
+  }
+}

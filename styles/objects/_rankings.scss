@@ -1,0 +1,9 @@
+.rankings {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $bp-medium) {
+    justify-content: center;
+    margin-left: 50px;
+  }
+}

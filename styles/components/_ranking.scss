@@ -1,0 +1,28 @@
+.ranking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--c-lightgray);
+  padding: 10px;
+  background: var(--c-lightgray);
+  border-radius: 10px;
+  margin: 5px;
+  align-items: center;
+
+  &__image {
+    margin: 5px;
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--c-prymary);
+
+    @media (min-width: $bp-medium) {
+      margin-left: 10px;
+    }
+  }
+
+  @media (min-width: $bp-medium) {
+    flex-direction: row;
+  }
+}

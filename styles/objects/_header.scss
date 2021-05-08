@@ -1,0 +1,14 @@
+.header {
+  &__title {
+    color: var(--c-prymary);
+  }
+
+  &__description {
+    color: var(--c-gray);
+  }
+
+  @media (min-width: $bp-medium) {
+    width: 30%;
+    text-align: left;
+  }
+}

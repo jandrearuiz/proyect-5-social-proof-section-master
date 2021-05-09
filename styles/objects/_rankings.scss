@@ -1,9 +1,14 @@
 .rankings {
   display: flex;
   flex-direction: column;
+  min-height: 250px;
+  justify-content: space-between;
 
-  @media (min-width: $bp-medium) {
-    justify-content: center;
-    margin-left: 50px;
+  @media (min-width: $bp-large) {
+    justify-content: space-between;
+    margin-left: auto;
+    min-width: 550px;
+    min-height: 195px;
+    align-items: center;
   }
 }

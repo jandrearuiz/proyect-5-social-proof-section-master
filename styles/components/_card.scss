@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   background: var(--c-prymary);
-  margin: 10px 0;
   padding: 35px;
   border-radius: 10px;
   color: var(--c-white);
   text-align: left;
+  justify-content: center;
 
   &__image {
     border-radius: 50%;
@@ -17,10 +17,28 @@
   &__header {
     display: flex;
     align-items: center;
+
+    @media (min-width: $bp-large) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    @media (min-width: $bp-xlarge) {
+      flex-direction: row;
+      text-align: left;
+    }
   }
 
   &__title {
-    margin: 10px 20px;
+    margin-left: 20px;
+
+    @media (min-width: $bp-large) {
+      margin: 0;
+    }
+
+    @media (min-width: $bp-xlarge) {
+      margin-left: 20px;
+    }
 
     &-principal {
       margin: 0;
@@ -32,19 +50,25 @@
     }
   }
 
-  &.first {
-    @media (min-width: $bp-medium) {
-      margin: 10px 10px 10px 0;
+  &:first-child {
+    @media (min-width: $bp-xlarge) {
+      align-self: flex-start;
     }
   }
-  &.medium {
-    @media (min-width: $bp-medium) {
-      margin: 10px;
+
+  &:last-child {
+    @media (min-width: $bp-xlarge) {
+      align-self: flex-end;
     }
   }
-  &.last {
-    @media (min-width: $bp-medium) {
-      margin: 10px 0 10px 10px;
-    }
+
+  @media (min-width: $bp-large) {
+    width: 24%;
+    min-height: 350px;
+  }
+
+  @media (min-width: $bp-xlarge) {
+    width: 27%;
+    min-height: auto;
   }
 }

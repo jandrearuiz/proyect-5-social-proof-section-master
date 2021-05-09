@@ -6,7 +6,6 @@
   padding: 10px;
   background: var(--c-lightgray);
   border-radius: 10px;
-  margin: 5px;
   align-items: center;
 
   &__image {
@@ -17,12 +16,37 @@
     margin: 0;
     color: var(--c-prymary);
 
-    @media (min-width: $bp-medium) {
+    @media (min-width: $bp-large) {
       margin-left: 10px;
     }
   }
 
-  @media (min-width: $bp-medium) {
-    flex-direction: row;
+  &:first-child {
+
+    @media (min-width:$bp-large) {
+      align-self: flex-start;
+    }
   }
+
+  &:last-child {
+
+    @media (min-width:$bp-large) {
+      align-self: flex-end;
+    }
+  }
+
+  &__header {
+    
+    @media (min-width:$bp-large) {
+      line-height: 0;
+    }
+  }
+
+  @media (min-width: $bp-large) {
+    flex-direction: row;
+    width: 400px;
+    padding: 15px 50px 15px 25px;
+    justify-content: flex-start;
+  }
+  
 }

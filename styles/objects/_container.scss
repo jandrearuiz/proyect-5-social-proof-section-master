@@ -3,8 +3,8 @@
   flex-direction: column;
   text-align: center;
 
-  @media (min-width: $bp-medium) {
+  @media (min-width: $bp-large) {
     flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
   }
 }
